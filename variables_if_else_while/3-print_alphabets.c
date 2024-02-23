@@ -17,5 +17,6 @@ while (cH <= 'Z')
 {
 putchar(cH);
 cH++;
+putchar("\n")
 return (0);
 }
