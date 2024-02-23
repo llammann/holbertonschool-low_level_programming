@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
 * main-function that giving info about last digit
 * Description:displaying short info about last digit
