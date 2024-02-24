@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  *main-putchar digits without variable
  *Return:always 0
