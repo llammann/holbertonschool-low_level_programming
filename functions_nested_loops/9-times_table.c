@@ -20,6 +20,7 @@ _putchar(' ');
 _putchar('0' + result);
 }
 else
+{
 _putchar('0');
 }
 if (j != 9)
