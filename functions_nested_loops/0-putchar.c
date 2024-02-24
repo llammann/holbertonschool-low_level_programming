@@ -1,11 +1,11 @@
 #include <stdio.h>
-
+#include 'main.h'
 /**
- *main-displaying _putchar
+ *_putchar-displaying _putchar func
  *Return:always 0
  *Description:giving _putchar
  **/
-int main(void)
+void _putchar(void)
 {
 putchar('_');
 putchar('p');
@@ -16,5 +16,6 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
+}
 return (0);
 }
