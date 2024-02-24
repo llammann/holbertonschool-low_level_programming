@@ -14,23 +14,19 @@ result = i * j;
 if (j != 0)
 {
 if (result < 10)
-}
+{
 _putchar(' ');
 }
-else
-{
-_putchar('0' + result / 10);
-}
-_putchar('0' + result % 10);
+_putchar('0' + result);
 }
 else
 {
-_putchar('0');
+_putchar('0'); /* Always print the first digit */
 }
 if (j != 9)
 {
-_putchar(',');
-_putchar(' ');
+_putchar(','); /* Print comma */
+_putchar(' '); /* Print space */
 }
 }
 _putchar('\n');
