@@ -4,7 +4,7 @@
  *Return:always 0
  *Description:giving _putchar
  **/
-void _putchar(void)
+void main(void)
 {
 putchar('_');
 putchar('p');
@@ -15,4 +15,5 @@ putchar('h');
 putchar('a');
 putchar('r');
 putchar('\n');
+return (0);
 }
