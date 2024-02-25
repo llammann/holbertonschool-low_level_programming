@@ -22,7 +22,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(result + '0');
 }
-else if
+else if (result >= 10)
 {
 _putchar(',');
 _putchar(' ');
