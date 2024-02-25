@@ -11,22 +11,23 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 result = i * j;
-if (j != 0)
+if (j == 0)
 {
-if (result < 10)
+_putchar(result + '0')
 {
+if (result < 10 && j != 0)
+{
+_putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(k + '0');
 }
-_putchar('0' + result);
-}
-else
+else if
 {
-_putchar('0'); /* Always print the first digit */
-}
-if (j != 9)
-{
-_putchar(','); /* Print comma */
-_putchar(' '); /* Print space */
+_putchar(',');
+_putchar(' ');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
 }
 }
 _putchar('\n');
