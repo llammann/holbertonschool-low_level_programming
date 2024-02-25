@@ -13,7 +13,7 @@ for (j = 0; j <= 9; j++)
 result = i * j;
 if (j == 0)
 {
-_putchar(result + '0')
+_putchar(result + '0');
 {
 if (result < 10 && j != 0)
 {
