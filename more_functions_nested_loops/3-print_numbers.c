@@ -2,7 +2,8 @@
 
 /**
  * print_numbers - prints numbers from 0 to 9 followed by a new line
- */
+ * _putchar - writes the character c to stdout
+*/
 void print_numbers(void)
 {
 char num = '0';
