@@ -2,6 +2,7 @@
 
 /**
  *main-displaying numbers with fizz buzz
+ */
 int main(void)
 {
 int i;
