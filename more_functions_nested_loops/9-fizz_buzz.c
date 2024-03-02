@@ -2,6 +2,8 @@
 
 /**
  *main-displaying numbers with fizz buzz
+ *Return: return always 0
+ *Description:short description
  */
 int main(void)
 {
