@@ -2,6 +2,6 @@
 #define MAIN_H
 void reset_to_98(int *n);
 void _puts(char *str);
-_putchar(*str);
+int _putchar(*str);
 
 #endif /* MAIN_H */
