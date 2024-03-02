@@ -14,11 +14,13 @@ return;
 }
 for (; i < n; i++)
 {
-for (; j < i; j++)
+while (j < i)
 {
 _putchar(' ');
+j++;
 }
 _putchar('\\');
 _putchar('\n');
+j = 0;
 }
 }
