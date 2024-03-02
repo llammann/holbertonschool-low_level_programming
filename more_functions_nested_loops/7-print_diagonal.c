@@ -9,6 +9,8 @@ int i = 0,j = 0;
 
 for ( ; i < n ; i++ )
 {
+if (n <= 0)
+_putchar('\n');
 while(j < i)
 {
 _putchar(' ');
@@ -19,3 +21,4 @@ _putchar('\n');
 j=0;
 }
 }
+
