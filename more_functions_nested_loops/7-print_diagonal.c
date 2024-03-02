@@ -5,21 +5,17 @@
  */
 void print_diagonal(int n)
 {
-int i, j;
-if (n <= 0)
+int i = 0,j = 0;
+
+for ( ; i < n ; i++ )
 {
-_putchar('\n');
-return;
-}
-for (i = 0; i < n; i++)
+while(j < i)
 {
-for (j = 0; j < n; j++)
-{
-if (j == i)
-_putchar('\\');
-else
 _putchar(' ');
+j++ ;
 }
+_putchar('\\');
 _putchar('\n');
+j=0;
 }
 }
