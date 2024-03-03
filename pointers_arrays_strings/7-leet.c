@@ -1,30 +1,26 @@
 #include "main.h"
 
 /**
- * leet - Encodes a string into 1337
- * @str: The string to encode
+ * *_strcpy - copies the string pointed to by src
+ * including the terminating null byte (\0)
+ * to the buffer pointed to by dest
+ * @dest: pointer to the buffer in which we copy the string
+ * @src: string to be copied
  *
- * Return: Pointer to the modified string
+ * Return: the pointer to dest
  */
-char *leet(char *str)
+char *_strcpy(char *dest, char *src)
 {
-char *ptr = str;
-char *leet_chars = "aAeEoOtTlL";
-char *leet_replacements = "44337011";
-int i;
-while (*ptr != '\0')
+int len, i;
+len = 0;
+while (src[len] != '\0')
 {
-i = 0;
-while (leet_chars[i] != '\0')
-{
-if (*ptr == leet_chars[i])
-{
-*ptr = leet_replacements[i];
-break;
+len++;
 }
-i++;
+for (i = 0; i < len; i++)
+{
+dest[i] = src[i];
 }
-ptr++;
-}
-return (str);
+dest[i] = '\0';
+return (dest);
 }
