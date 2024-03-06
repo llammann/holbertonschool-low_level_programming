@@ -1,3 +1,4 @@
+
 #ifndef MAIN_H
 #define MAIN_H
 void reset_to_98(int *n);
@@ -23,4 +24,5 @@ char *leet(char *);
 
 char *_memset(char *s, char b, unsigned int n);
 char *_memset(char *s, char b, unsigned int n);
+char *_strchr(char *s, char c);
 #endif /* MAIN_H */
