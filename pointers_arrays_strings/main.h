@@ -20,4 +20,6 @@ char *cap_string(char *);
 int _strcmp(const char *s1, const char *s2);
 char *leet(char *);
 
+
+char *_memset(char *s, char b, unsigned int n);
 #endif /* MAIN_H */
