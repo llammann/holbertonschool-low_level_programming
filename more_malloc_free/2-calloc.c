@@ -18,7 +18,8 @@ total_size = nmemb * size;
 ptr = malloc(total_size);
 if (ptr == NULL)
 return (NULL);
+char *char_ptr = ptr;
 for (i = 0; i < total_size; i++)
-ptr[i] = 0;
+char_ptr[i] = 0;
 return (ptr);
 }
