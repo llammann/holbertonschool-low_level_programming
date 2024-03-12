@@ -23,7 +23,7 @@ while (s1[len1])
 len1++;
 while (s2[len2])
 len2++;
-concat = malloc((len1 + len2 + 1) * sizeof(char));
+concat = malloc((len1 + n + 1) * sizeof(char));
 if (concat == NULL)
 return (NULL);
 for (i = 0; s1[i]; i++)
