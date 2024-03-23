@@ -1,15 +1,18 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
-
 /**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
+  * init_dog - initialize struct dog.
+  * @d: name of struct
+  * @name: name of dog in struct
+  * @age: age of dog in struct
+  * @owner: name of owner of dog in struct
+  */
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct dog my_dog;
-init_dog(&my_dog, "Ghost", 4.75, "Jon Snow");
-printf("My name is %s, and I am %.2f :) - Woof!\n", my_dog.name, my_dog.age);
-return (0);
+	if (d)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	}
 }
