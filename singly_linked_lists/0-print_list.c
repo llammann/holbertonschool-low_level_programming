@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "lists.h"
 
-size_t print_list(const list_t *head)
+size_t print_list(const list_t *h)
 {
-    const list_t *current = head;
+    const list_t *current = h;
     size_t count = 0;
 
     while (current != NULL)
@@ -19,4 +19,3 @@ size_t print_list(const list_t *head)
 
     return count;
 }
-
