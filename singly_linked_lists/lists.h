@@ -8,6 +8,8 @@
  * @next: Pointer to the next node
  */
 
+#include <stdlib.h>
+
 typedef struct list_s
 {
 char *str;
