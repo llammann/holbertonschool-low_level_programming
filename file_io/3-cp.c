@@ -11,12 +11,12 @@
  * @param msg The error message to print
  * @param code The exit code
  */
-
 void handle_error(const char *msg, int code)
 {
     dprintf(STDERR_FILENO, "%s\n", msg);
     exit(code);
 }
+
 
 /**
  * Opens a file with the given filename, flags, and mode.
