@@ -13,7 +13,7 @@
  */
 void handle_error(const char *msg, int code)
 {
-    dprintf(STDERR_FILENO, "%s\n", msg);
+    perror(msg);
     exit(code);
 }
 
