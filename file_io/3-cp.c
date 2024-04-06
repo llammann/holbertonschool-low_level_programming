@@ -13,7 +13,7 @@
  */
 void handle_error(const char *msg, int code)
 {
-    perror(msg);
+    fprintf(stderr, "%s\n", msg);
     exit(code);
 }
 
