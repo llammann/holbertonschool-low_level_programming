@@ -17,7 +17,6 @@ void handle_error(const char *msg, int code)
     exit(code);
 }
 
-
 /**
  * Opens a file with the given filename, flags, and mode.
  * 
@@ -26,15 +25,15 @@ void handle_error(const char *msg, int code)
  * @param mode The mode to use if the file is created
  * @return The file descriptor of the opened file
  */
-
 int open_file(const char *filename, int flags, mode_t mode)
 {
     int fd = open(filename, flags, mode);
     if (fd == -1)
         handle_error("Error opening file", 98);
 
-    return fd;
+    return (fd);
 }
+
 
 /**
  * Closes the file with the given file descriptor.
