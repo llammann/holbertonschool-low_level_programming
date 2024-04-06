@@ -1,41 +1,43 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    FILE *fptr1, *fptr2;
-    char filename[100], c;
+int main() 
+{ 
+    FILE *fptr1, *fptr2; 
+    char filename[100], c; 
 
-    printf("Enter the filename to open for reading\n");
-    scanf("%s", filename);
+    printf("Enter the filename to open for reading: "); 
+    fgets(filename, sizeof(filename), stdin);
+    filename[strcspn(filename, "\n")] = '\0';
 
-   
-    fptr1 = fopen(filename, "r");
-    if (fptr1 == NULL) {
-        printf("Cannot open file %s for reading\n", filename);
-        exit(97);
-    }
+    fptr1 = fopen(filename, "r"); 
+    if (fptr1 == NULL) 
+    { 
+        fprintf(stderr, "Cannot open file %s\n", filename); 
+        exit(1); 
+    } 
 
-    printf("Enter the filename to open for writing\n");
-    scanf("%s", filename);
+    printf("Enter the filename to open for writing: "); 
+    fgets(filename, sizeof(filename), stdin);
+    filename[strcspn(filename, "\n")] = '\0';
 
+    
+    fptr2 = fopen(filename, "w"); 
+    if (fptr2 == NULL) 
+    { 
+        fprintf(stderr, "Cannot open file %s\n", filename); 
+        exit(1); 
+    } 
 
-    fptr2 = fopen(filename, "w");
-    if (fptr2 == NULL) {
-        printf("Cannot open file %s for writing\n", filename);
-        exit(99);
-    }
+    while ((c = fgetc(fptr1)) != EOF) 
+    { 
+        fputc(c, fptr2); 
+    } 
 
+    printf("\nContents copied to %s\n", filename); 
 
-    while ((c = fgetc(fptr1)) != EOF) {
-        fputc(c, fptr2);
-    }
-
-    printf("Contents copied to %s\n", filename);
-
-
-    fclose(fptr1);
-    fclose(fptr2);
-
-    return 0;
+    fclose(fptr1); 
+    fclose(fptr2); 
+    return 0; 
 }
 
