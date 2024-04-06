@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <unistd.h>
 /**
  * append_text_to_file - Appends text at the end of a file
  * @filename: Name of the file
