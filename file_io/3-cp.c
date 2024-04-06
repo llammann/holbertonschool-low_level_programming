@@ -9,7 +9,7 @@ int main()
 	printf("Enter the filename to open for reading \n"); 
 	scanf("%s", filename); 
 
-	// Open one file for reading 
+ 
 	fptr1 = fopen(filename, "r"); 
 	if (fptr1 == NULL) 
 	{ 
@@ -20,7 +20,7 @@ int main()
 	printf("Enter the filename to open for writing \n"); 
 	scanf("%s", filename); 
 
-	// Open another file for writing 
+
 	fptr2 = fopen(filename, "w"); 
 	if (fptr2 == NULL) 
 	{ 
@@ -28,7 +28,7 @@ int main()
 		exit(0); 
 	} 
 
-	// Read contents from file 
+ 
 	c = fgetc(fptr1); 
 	while (c != EOF) 
 	{ 
